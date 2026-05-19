@@ -1,9 +1,10 @@
+// ROS 2 Node that sends a String message to Arduino via Serial Port
+
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
 #include <termios.h>
 #include <fcntl.h>
 #include <unistd.h>
-
 
 class gripper : public rclcpp::Node
 {
